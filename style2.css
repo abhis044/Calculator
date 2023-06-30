@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right,
+    rgb(101, 1, 110),
+    rgb(253, 10, 83)
+    );
+}
+.calculator{
+    display: grid;
+    justify-content:center;
+    align-content:center;
+    margin-top: 40px;
+    grid-template-columns: repeat(4,70px) ;
+    grid-template-rows: 90px repeat(6,70px) ;
+}
+.span-two{
+    grid-column: span 2;
+}
+.span-four{
+    grid-column: span 4;
+}
+div > button{
+    font-size: 1.25rem;
+    cursor: pointer;
+    border: 1px solid purple;
+    background-color: rgba(255,100,228,0.75);
+}
+div >button:hover{
+    background-color: rgb(255,255,255,0.8);
+}
+.output{
+    color: rgba(255,255,255,0.9);
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 4px;
+    word-break: break-all;
+    
+}
+.output .CurrentNumbers{ 
+    color:rgba(255,255,255,0.7);
+    font-size: 14px;
+    background-color:black;
+}
+.output .Result{
+      color: white;
+      font-size: 1.25rem;
+}
